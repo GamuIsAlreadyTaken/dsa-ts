@@ -1,0 +1,10 @@
+
+#*
+!src
+!src/**
+!js
+!js/**
+!.vscode
+!.vscode/**
+!README.md
+!.gitignore
