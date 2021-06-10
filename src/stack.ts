@@ -7,7 +7,7 @@ export class Stack<T>{
         this.body = new Array<T>(size);
     }
     push = (element: T) => {
-        if (this.isFull()) throw RangeError("Cannot push element to full stack");
+        if (this.isFull()) throw RangeError("Cannot push element, stack is full");
 
         this.top++;
         this.body[this.top] = element;

@@ -3,7 +3,7 @@ export class Stack {
         this.top = -1;
         this.push = (element) => {
             if (this.isFull())
-                throw RangeError("Cannot push element to full stack");
+                throw RangeError("Cannot push element, stack is full");
             this.top++;
             this.body[this.top] = element;
         };
