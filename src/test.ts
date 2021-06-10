@@ -7,8 +7,14 @@ console.log("Lets test the implemented data structures");
 
 
 console.log("The stack : ");
-let a : dsa.Stack<number> = new dsa.Stack<number>(2);
+let stack : dsa.Stack<number> = new dsa.Stack<number>(2);
 
 
+let getMethods = (obj) => Object.getOwnPropertyNames(obj).filter(item => typeof obj[item] === 'function')
+
+console.log(getMethods(stack))
+for (const a of getMethods(stack)) {
+    console.log(a,stack[a](3), stack)
+}
 
 

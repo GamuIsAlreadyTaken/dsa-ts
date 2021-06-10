@@ -6,25 +6,25 @@ export class Stack<T>{
     constructor(size: number) {
         this.body = new Array<T>(size);
     }
-    push(element: T) {
+    push = (element: T) => {
         if (this.isFull()) throw RangeError("Cannot push element to full stack");
 
         this.top++;
         this.body[this.top] = element;
     }
-    pop(): T {
+    pop = (): T => {
         let element: T = this.body[this.top];
         this.body[this.top] = undefined;
         this.top--;
         return element;
     }
-    isEmpty(): boolean {
+    isEmpty = (): boolean => {
         return (this.top == -1);
     }
-    isFull(): boolean {
+    isFull = (): boolean => {
         return (this.top == this.body.length - 1);
     }
-    peek(): T {
+    peek = (): T => {
         return this.body[this.top];
     }
 }
