@@ -1,3 +1,4 @@
+import { DataStructure } from "./dsa.js";
 
 export class Stack<T>{
     private body: Array<T>;

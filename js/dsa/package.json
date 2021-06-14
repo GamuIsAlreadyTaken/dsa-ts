@@ -1,0 +1,7 @@
+{
+    "name": "dsa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dsa.js",
+    "type": "module"
+  }
