@@ -20,13 +20,13 @@ export class Queue {
             return element;
         };
         this.isEmpty = () => {
-            return;
+            return this.front == -1;
         };
         this.isFull = () => {
-            return;
+            return this.rear == this.body.length;
         };
         this.peek = () => {
-            return;
+            return this.body[this.front];
         };
         this.body = new Array(size);
     }

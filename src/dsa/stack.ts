@@ -14,7 +14,7 @@ export class Stack<T>{
     }
     pop = (): T => {
         let element: T = this.body[this.top];
-        this.body[this.top] = undefined;
+        this.body[this.top] = null;
         this.top--;
         return element;
     }
@@ -25,6 +25,6 @@ export class Stack<T>{
         return (this.top == this.body.length - 1);
     }
     peek = (): T => {
-        return this.body[this.top];
+        return this.body[this.top] ?? null;
     }
 }

@@ -9,7 +9,7 @@ export class Stack {
         };
         this.pop = () => {
             let element = this.body[this.top];
-            this.body[this.top] = undefined;
+            this.body[this.top] = null;
             this.top--;
             return element;
         };
@@ -20,7 +20,8 @@ export class Stack {
             return (this.top == this.body.length - 1);
         };
         this.peek = () => {
-            return this.body[this.top];
+            var _a;
+            return (_a = this.body[this.top]) !== null && _a !== void 0 ? _a : null;
         };
         this.body = new Array(size);
     }

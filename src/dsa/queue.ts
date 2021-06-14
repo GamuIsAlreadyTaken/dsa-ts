@@ -23,13 +23,13 @@ export class Queue<T>{
         return element;
     }
     isEmpty = (): boolean => {
-        return
+        return this.front == -1;
     }
     isFull = (): boolean => {
-        return
+        return this.rear == this.body.length;
     }
     peek = (): T => {
-        return
+        return this.body[this.front];
     }
 
 }
