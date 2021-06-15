@@ -1,5 +1,7 @@
-export class Stack {
+import { DataStructure } from "./data-structure.js";
+export class Stack extends DataStructure {
     constructor(size) {
+        super();
         this.top = -1;
         this.push = (element) => {
             if (this.isFull())

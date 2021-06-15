@@ -1,8 +1,12 @@
 import * as dsa from './dsa/dsa.js';
-console.log("En ello!");
+import * as test from './test.js';
 
-console.log('testing queue');
 
 let queue = new dsa.Queue(6);
 let stack = new dsa.Stack(6);
+let circular_queue = new dsa.CircularQueue(4);
 
+
+test.testCircularQueue();
+test.testQueue();
+test.testStack();

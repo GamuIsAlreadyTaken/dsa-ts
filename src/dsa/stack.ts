@@ -1,10 +1,11 @@
-import { DataStructure } from "./dsa.js";
+import { DataStructure } from "./data-structure.js";
 
-export class Stack<T>{
+export class Stack<T> extends DataStructure{
     private body: Array<T>;
     private top: number = -1;
 
     constructor(size: number) {
+        super();
         this.body = new Array<T>(size);
     }
     push = (element: T) => {
