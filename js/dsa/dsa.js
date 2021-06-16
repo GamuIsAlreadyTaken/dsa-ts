@@ -1,3 +1,3 @@
-export { Stack } from "./stack.js";
-export { Queue } from "./queue.js";
-export { CircularQueue } from "./circular-queue.js";
+export { Stack } from "./stack/stack";
+export { Queue } from "./queue/queue";
+export { CircularQueue } from "./queue/circularQueue";

@@ -1,4 +1,4 @@
-import * as dsa from "./dsa/dsa.js";
+import * as dsa from "./dsa/dsa";
 export function testStack() {
     let stack = new dsa.Stack(4);
     console.log("Probando el stack");

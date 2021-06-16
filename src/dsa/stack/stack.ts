@@ -1,4 +1,4 @@
-import { DataStructure } from "./data-structure.js";
+import { DataStructure } from "../dataStructure.js";
 
 export class Stack<T> extends DataStructure{
     private body: Array<T>;

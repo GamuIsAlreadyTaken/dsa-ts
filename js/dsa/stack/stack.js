@@ -1,4 +1,4 @@
-import { DataStructure } from "./data-structure.js";
+import { DataStructure } from "../queue/dataStructure";
 export class Stack extends DataStructure {
     constructor(size) {
         super();

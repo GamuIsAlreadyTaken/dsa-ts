@@ -1,4 +1,4 @@
-import { DataStructure } from "./data-structure.js";
+import { DataStructure } from "../dataStructure.js";
 
 
 export class Queue<T> extends DataStructure{
